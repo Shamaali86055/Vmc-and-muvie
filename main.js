@@ -27,21 +27,11 @@ function btn0() {
   let pass = document.getElementById("pass").value;
   let smg = new SpeechSynthesisUtterance("Password Galat Hai Dobara koshish kijiye");
   
-  let smg1 = new SpeechSynthesisUtterance(" swagat hai aapka hamare website perr");
-  let smg2 = new SpeechSynthesisUtterance("Abay Saallay Pahle Naam Likh ");
-  
-  smg.lang = "hi-IN";
-  smg1.lang = "hi-IN";
-  smg2.lang = "hi-IN";
   
   if (pass === "shama") {
     a.hidden = true;
     b.hidden = false;
-    speechSynthesis.speak(smg1);
-  }  else if (pass === "") {
-    speechSynthesis.speak(smg2);
   } else {
-    speechSynthesis.speak(smg);
     alert ("wrong password please try again..!")
   }
 }
