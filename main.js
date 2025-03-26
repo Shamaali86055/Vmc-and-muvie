@@ -25,7 +25,6 @@ let g = document.querySelector(".g");
 
 function btn0() {
   let pass = document.getElementById("pass").value;
-  let smg = new SpeechSynthesisUtterance("Password Galat Hai Dobara koshish kijiye");
   
   
   if (pass === "shama") {
